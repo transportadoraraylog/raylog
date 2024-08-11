@@ -1,0 +1,223 @@
+body {
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    color: #333; /* Cor do texto padrão */
+    background-color: #f4f4f4; /* Cor de fundo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    max-width: 1200px; /* Define uma largura máxima para o contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do contêiner */
+}
+
+/* Estilo para centralizar o texto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.text-outline {
+    font-family: 'Roboto', sans-serif; /* Fonte moderna e limpa */
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow:
+        1px 1px 0 white, 
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white;
+    padding: 5px;
+    display: inline-block;
+    background-color: transparent;
+}
+
+
+/* Estilo para elementos dentro do contêiner */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+p {
+    margin-bottom: 20px; /* Espaçamento inferior dos parágrafos */
+}
+.text-outline {
+    text-align: center;
+}
+
+/* Centraliza os itens no container */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para cada item de serviço */
+.service {
+    flex: 1 1 300px; /* Ajusta o tamanho dos itens para garantir que ocupem o espaço de maneira uniforme */
+    max-width: 300px; /* Define uma largura máxima para os itens */
+    margin: 10px; /* Margem ao redor dos itens */
+    text-align: center; /* Centraliza o texto dos itens de serviço */
+}
+
+
+.service img {
+    max-width: 100%; /* Garante que as imagens não excedam a largura do contêiner */
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+h1, h2, h5 {
+    font-family: 'Arial', sans-serif;
+}
+
+#logo-link {
+    display: inline-block; /* Para garantir que o efeito de transformação seja aplicado corretamente */
+    transition: transform 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+#logo-link img {
+    display: block; /* Remove o espaçamento extra em torno da imagem */
+}
+
+#logo-link:hover {
+    color: #007bff; /* Altera a cor do texto do link no hover */
+    transform: scale(1.05); /* Aumenta o tamanho do link */
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#menu a:hover {
+    color: #007bff;
+    transform: scale(1.05);
+}
+
+#menu img {
+    width: 50px;
+    height: 50px;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 50px; /* Tamanho fixo para todas as imagens */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.whatsapp-button {
+   position: absolute;
+top: 20px; /* Ajusta a distância do topo da imagem */
+left: 50%; /* Centraliza horizontalmente */
+transform: translateX(-50%); /* Ajusta para centralizar horizontalmente */
+background-color: rgba(37, 211, 102, 0.8); /* Cor com transparência para não sobrepor a imagem completamente */
+color: #fff;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 5px;
+transition: transform 0.3s ease, background-color 0.3s ease;
+z-index: 10; /* Garante que o botão fique sobre a imagem */
+white-space: nowrap; /* Garante que o texto do botão não quebre em várias linhas */
+}
+
+.whatsapp-button:hover {
+    transform: translateX(-50%) scale(1.1); /* Mantém a centralização ao aumentar o tamanho */
+background-color: rgb(78, 241, 138); /* Intensifica a cor ao passar o mouse */
+    }
+
+
+/* Edição do footer */
+footer {
+    width: 100%;
+    background-color: #b1b4b8;
+    padding: 2em 0;
+    border-top: 1px solid #e7e7e7;
+    color: #555;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 1em;
+}
+
+.footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.footer-section p, .footer-section a {
+    margin: 0.5em 0;
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-credits {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
